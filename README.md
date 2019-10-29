@@ -7,7 +7,9 @@ https://github.com/venits/react-native-dark-login-template
 
 ## How to use?
 
-1. Install dependencies.
+1. Download or clone this repo.
+
+2. Install dependencies.
 
 ```js
 npm install
@@ -15,7 +17,7 @@ npm install
 yarn install
 ```
 
-2. Run project on iOS / Android.
+3. Run project on iOS / Android.
 
 ```js
  npm run ios // npm run android
