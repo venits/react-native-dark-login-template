@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Dark Login Template",
-    "slug": "dark-login-template",
+    "name": "React Native Dark Login Template",
+    "slug": "react-native-dark-login-template",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Simple dark login template for React Native",
+    "githubUrl": "https://github.com/venits/react-native-dark-login-template"
   }
 }
