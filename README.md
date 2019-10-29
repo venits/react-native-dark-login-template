@@ -2,9 +2,6 @@
 
 More templates at [ReactNativeMarket.com](http://reactnativemarket.com/) 💖
 
-You can find more details about this template here:
-https://github.com/venits/react-native-dark-login-template
-
 ## How to use?
 
 1. Download or clone this repo.
