@@ -1,29 +1,42 @@
-import { StatusBar } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-
-StatusBar.setBarStyle('light-content');
-
+import React from 'react'
+import { StatusBar } from 'react-native'
+import { Provider } from 'react-native-paper'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { theme } from './src/core/theme'
 import {
-  HomeScreen,
+  StartScreen,
   LoginScreen,
   RegisterScreen,
   ForgotPasswordScreen,
   Dashboard,
-} from './src/screens';
+} from './src/screens'
 
-const Router = createStackNavigator(
-  {
-    HomeScreen,
-    LoginScreen,
-    RegisterScreen,
-    ForgotPasswordScreen,
-    Dashboard,
-  },
-  {
-    initialRouteName: 'HomeScreen',
-    headerMode: 'none',
-  }
-);
+StatusBar.setBarStyle('light-content')
+const Stack = createStackNavigator()
 
-export default createAppContainer(Router);
+const App = () => {
+  return (
+    <Provider theme={theme}>
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="StartScreen"
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name="StartScreen" component={StartScreen} />
+          <Stack.Screen name="LoginScreen" component={LoginScreen} />
+          <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+          <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen
+            name="ForgotPasswordScreen"
+            component={ForgotPasswordScreen}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
+  )
+}
+
+export default App
