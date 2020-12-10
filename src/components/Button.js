@@ -1,44 +1,35 @@
-import React, { memo } from 'react';
-import { StyleSheet } from 'react-native';
-import { Button as NativeButton, Text } from 'native-base';
-import { theme } from '../core/theme';
+import React from 'react'
+import { StyleSheet } from 'react-native'
+import { Button as PaperButton } from 'react-native-paper'
+import { theme } from '../core/theme'
 
-const Button = ({ bordered, style, title, ...props }) => (
-  <NativeButton
-    full
+const Button = ({ mode, style, ...props }) => (
+  <PaperButton
     style={[
       styles.button,
-      {
-        backgroundColor: bordered ? theme.colors.surface : theme.colors.primary,
+      mode === 'outlined' && {
+        backgroundColor: theme.colors.surface,
+        borderColor: theme.colors.text,
       },
       style,
     ]}
-    bordered={bordered}
+    labelStyle={styles.text}
+    mode={mode}
     {...props}
-  >
-    <Text
-      style={[
-        styles.text,
-        { color: bordered ? theme.colors.primary : theme.colors.secondary },
-      ]}
-    >
-      {title}
-    </Text>
-  </NativeButton>
-);
+  />
+)
 
 const styles = StyleSheet.create({
   button: {
     width: '100%',
     marginVertical: 10,
-    borderRadius: 4,
-    borderColor: theme.colors.buttonBorder,
+    paddingVertical: 2,
   },
   text: {
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 15,
     lineHeight: 26,
   },
-});
+})
 
-export default memo(Button);
+export default Button

@@ -1,6 +1,15 @@
 # React Native Dark Login Template
 
-More templates at [ReactNativeMarket.com](http://reactnativemarket.com/) 💖
+This repo is proudly sponsored by:
+
+<a href="https://reactnativemarket.com/" rel="nofollow" target="_blank">
+  <img src="https://raw.githubusercontent.com/venits/react-native-market/master/assets/banner.png" width="280"><br />
+  React Native Templates & Starter Kits and Apps for easier start.
+</a>
+
+## Demo
+
+https://dark-login-template.web.app
 
 ## How to use?
 
@@ -22,12 +31,6 @@ yarn install
  yarn ios // yarn android
 ```
 
-Project was created using [Expo](https://expo.io/). If you want standard native project please run following command:
-
-```js
-expo eject
-```
-
 ## Preview
 
 ![homescreen](https://raw.githubusercontent.com/venits/react-native-market/master/assets/dark-login-template/homescreen.png)
@@ -36,16 +39,11 @@ expo eject
 ![forgot](https://raw.githubusercontent.com/venits/react-native-market/master/assets/dark-login-template/forgot.png)
 ![dashboard](https://raw.githubusercontent.com/venits/react-native-market/master/assets/dark-login-template/dashboard.png)
 
-## Live preview on Expo
-
-Template is avaiable on Expo:
-https://expo.io/@venits/react-native-dark-login-template
-
 ## Support
 
 In case of any questions or problems, please contact me at:
 [hello@reactnativemarket.com](mailto:hello@reactnativemarket.com)
 
-### Happy Coding 💖
+### Happy Coding 🚀
 
 ### [ReactNativeMarket.com](http://reactnativemarket.com/)
