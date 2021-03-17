@@ -8,14 +8,14 @@ import {
   StartScreen,
   LoginScreen,
   RegisterScreen,
-  ForgotPasswordScreen,
+  ResetPasswordScreen,
   Dashboard,
 } from './src/screens'
 
 StatusBar.setBarStyle('light-content')
 const Stack = createStackNavigator()
 
-const App = () => {
+export default function App() {
   return (
     <Provider theme={theme}>
       <NavigationContainer>
@@ -30,13 +30,11 @@ const App = () => {
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
           <Stack.Screen
-            name="ForgotPasswordScreen"
-            component={ForgotPasswordScreen}
+            name="ResetPasswordScreen"
+            component={ResetPasswordScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
   )
 }
-
-export default App
